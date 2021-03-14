@@ -286,7 +286,14 @@ function changeThemeOne() {
     localStorage.setItem("bgcolor", "rgb(193,70,243)");
     backgroundColor.value = localStorage.getItem("bgcolor");
     mainPage.style.backgroundColor = backgroundColor.value;
-}
+    let titleColor = document.getElementById("editTitle");
+    localStorage.setItem("textcolorTitle", "rgb(221,221,221)");
+    titleColor.value = localStorage.getItem("textcolorTitle");
+    editTitle.style.color = titleColor.value;
+    let textColor = document.getElementById("editText");
+    localStorage.setItem("textcolorText", "rgb(221,221,221)");
+    textColor.value = localStorage.getItem("textcolorText");
+    editText.style.color = textColor.value;}
 
 function changeThemeTwo() {
     let backgroundColor = document.getElementById("mainPage");
